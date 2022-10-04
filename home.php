@@ -13,7 +13,8 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col">Banner</div>
+                <div class="col"><img src="imagens/banner.png" width="75%" height="40%" class="card-img-top">
+                </div>
             </div>
             <div class="row">
                 <div class="col"><?php include 'menu_horizontal.php'; ?></div>
