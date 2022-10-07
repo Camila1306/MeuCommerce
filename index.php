@@ -4,6 +4,9 @@ session_start();
 if (isset($_GET['debug'])) {
     $_SESSION['debug'] = $_GET['debug'];
 }
+if (isset($_GET['login'])) {
+    $_SESSION['login'];
+}
 
 if (isset($_GET['pagina']) && $_GET['pagina'] == 'logout') {
     session_destroy();

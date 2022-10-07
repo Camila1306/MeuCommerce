@@ -8,7 +8,7 @@ $produto_detalhes = $produto->fetch();
 
 
 <div class="card mb-3">
-    <img src="imagens/<?php echo $produto_detalhes['imagem']; ?>" class="card-img-top" alt="...">
+    <img src="./imagens/<?php echo $produto_detalhes['imagem']; ?>" class="card-img-top">
     <div class="card-body">
         <h5 class="card-title"><?php echo $produto_detalhes['descricao']; ?></h5>
         <p class="card-text"><?php echo $produto_detalhes['resumo']; ?></p>
@@ -19,8 +19,6 @@ $produto_detalhes = $produto->fetch();
             <button class="sacola btn btn-primary">Adicionar a sacola</button>
             <script>
             $(".sacola").click(function() {
-                //form method="post" action=""
-                //input type="text" name="adicionar_sacola"
 
                 $.post("", {
                     "adicionar_sacola": true

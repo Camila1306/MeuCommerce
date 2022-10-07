@@ -18,7 +18,7 @@ if (empty($linha_categoria['categoria_pai'])) {
 
     while ($produto = $consulta_produtos->fetch()) { ?>
     <div class="card" style="width: 18rem;">
-        <img src="imagens/<?php echo $produto['imagem']; ?>" class="card-img-top" alt="<?php echo $produto[
+        <img src="./imagens/<?php echo $produto['imagem']; ?>" class="card-img-top" alt="<?php echo $produto[
     'descricao'
 ]; ?>">
         <div class="card-body">
